@@ -1,0 +1,113 @@
+\documentclass[a4page]{article}
+
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+\frenchspacing
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{changepage}
+
+\begin{document}
+	\begin{titlepage}
+		\title{Tabela do sklepu muzycznego ,,MusicPro --- online''\\}
+		\author{Kamil Jurczuk \\ Bartosz Lodziński \\ Illia Shkroba \\ Piotr Wezgraj \\Paweł Wiszniewski}
+		\makeatletter
+			\centering
+			{
+				{\Huge{\@title}}
+				\vspace{5cm}
+				{\LARGE{\@author}}
+			}
+		\makeatother
+
+	\end{titlepage}
+
+	\begin{table}
+	\newcounter{rownumber}
+	\newcommand\next{\stepcounter{rownumber}\arabic{rownumber}}
+		\begin{adjustwidth}{-3cm}{}
+			\begin{tabular}{|c|c|c|c|}
+			
+				\hline
+					Lp & Grupy czasownikowe & Usługa (przypadek użycia) & Operacja lub odpowiedzialność\\
+				\hline
+					\next & \textbf{tworzymy} sklep & a & a\\
+				\hline
+					\next & można \textbf{kupować} instrumenty & a & a\\
+				\hline
+					\next & stan \textbf{opisuje} liczbę sztuk & a & a\\
+				\hline
+					\next & stan \textbf{nie może być} ujemny & a & a\\
+				\hline
+					\next & dostępny stan \textbf{odwzorowuje} posiadania instrumentu & a & a\\
+				\hline
+					\next & \textbf{istnieje} tylko jeden szef & a & a\\
+				\hline
+					\next & \textbf{nie będzie} dwóch szefów & a & a\\
+				\hline
+					\next & pracownik \textbf{realizuje} zamówienie & realizacja zamówienia & a\\
+				\hline
+					\next & pracownik \textbf{nadzorowuje} zamówienie & a & a\\
+				\hline
+					\next & pracownik \textbf{sprawdza} czy opłacone & a & a\\
+				\hline
+					\next & pracownik \textbf{zmienia} status zamówienia & a & a\\
+				\hline
+					\next & premię się \textbf{wylicza} ze wzoru $f(x) = 0.1 * x$& a & a\\
+				\hline
+					\next & system \textbf{przechowuje} informację o produktach & a & a\\
+				\hline
+					\next & instrument \textbf{ma} nazwę & a & a\\
+				\hline
+					\next & firma \textbf{może produkować} więcej jednego instrumentu & a & a\\
+				\hline
+					\next & system \textbf{przechowuje} dane klientów & a & a\\
+				\hline
+					\next & klient \textbf{musi założyć} konto & założenie konta & a\\
+				\hline
+					\next & klient \textbf{wypełnia} formularz aby \textbf{złożyć} zamówienie & składanie zamówienia & a\\
+				\hline
+					\next & system \textbf{przechowuje} dane pracowników & a & a\\
+				\hline
+					\next & pracownik \textbf{realizuje} $[1; 2]$ funkcji & a & a\\
+				\hline
+					\next & \textbf{nie przewidujemy} rozszerzenia listy odpowiedzialności & a & a\\
+				\hline
+					\next & klient \textbf{składa} zamówienie & a & a\\
+				\hline
+					\next & klient \textbf{może wybrać} poprzez formularz & a & a\\
+				\hline
+					\next & klient \textbf{wybiera} formę dostawy & a & a\\
+				\hline
+					\next & klient \textbf{wybiera} formę opłaty & a & a\\
+				\hline
+					\next & zamówienie \textbf{obsługują} co najmniej dwóch pracowników & a & a\\
+				\hline
+					\next & \textbf{rejestrujemy} pracowników biorących udział w realizcji zamówienia & a & a\\
+				\hline
+					\next & klient \textbf{może wybrać} poprzez formularz & a & a\\
+				\hline
+	
+			\end{tabular}
+		\end{adjustwidth}
+	\end{table}
+
+	\newpage
+
+	\begin{table}
+		\large
+
+		\begin{tabular}{|c|c|c|c|}
+		
+			\hline
+				Lp & Grupy rzeczownikowe & Kandydat na obiekt & Kandydat na atrybut\\
+			\hline
+				1 & a & a & a\\
+			\hline
+
+		\end{tabular}
+	\end{table}
+\end{document}
