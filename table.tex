@@ -6,11 +6,13 @@
 \usepackage[T1]{fontenc}
 \frenchspacing
 \usepackage{indentfirst}
-\usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{changepage}
 
 \begin{document}
+
+	\pagenumbering{gobble}
+
 	\begin{titlepage}
 		\title{Tabela do sklepu muzycznego ,,MusicPro --- online''\\}
 		\author{Kamil Jurczuk \\ Bartosz Lodziński \\ Illia Shkroba \\ Piotr Wezgraj \\Paweł Wiszniewski}
@@ -25,70 +27,111 @@
 
 	\end{titlepage}
 
-	\begin{table}
+	\clearpage
+
+	\begin{table}[tp!]
 	\newcounter{rownumber}
-	\newcommand\next{\stepcounter{rownumber}\arabic{rownumber}}
+	\newcommand\nextrow{\stepcounter{rownumber}\arabic{rownumber}}
+
 		\begin{adjustwidth}{-4.5cm}{}
-			\begin{tabular}{|c|c|c|c|}
+			\begin{tabular}{|l|l|l|l|}
 			
 				\hline
 					Lp & Grupy czasownikowe & Usługa (przypadek użycia) & Operacja lub odpowiedzialność\\
 				\hline
-					\next & \textbf{tworzymy} sklep & a & a\\
+					\nextrow & \textbf{tworzymy} sklep &  & tworzenie\\
 				\hline
-					\next & można \textbf{kupować} instrumenty & a & a\\
+					\nextrow & można \textbf{kupować} instrumenty & kupno instrumentów & kupowanie\\
 				\hline
-					\next & stan \textbf{opisuje} liczbę sztuk & a & a\\
+					\nextrow & stan \textbf{opisuje} liczbę sztuk &  & opisywanie\\
 				\hline
-					\next & stan \textbf{nie może być} ujemny & a & a\\
+					\nextrow & stan \textbf{nie może być} ujemny &  & \\
 				\hline
-					\next & dostępny stan \textbf{odwzorowuje} posiadania instrumentu & a & a\\
+					\nextrow & dostępny stan \textbf{odwzorowuje} posiadania instrumentu &  & odwzorowanie\\
 				\hline
-					\next & \textbf{istnieje} tylko jeden szef & a & a\\
+					\nextrow & \textbf{istnieje} tylko jeden szef &  & \\
 				\hline
-					\next & \textbf{nie będzie} dwóch szefów & a & a\\
+					\nextrow & \textbf{nie będzie} dwóch szefów &  & \\
 				\hline
-					\next & pracownik \textbf{realizuje} zamówienie & realizacja zamówienia & a\\
+					\nextrow & pracownik \textbf{realizuje} zamówienie & realizacja zamówienia & realizacja\\
 				\hline
-					\next & pracownik \textbf{nadzorowuje} zamówienie & a & a\\
+					\nextrow & pracownik \textbf{nadzorowuje} zamówienie &  & nadzorowanie\\
 				\hline
-					\next & pracownik \textbf{sprawdza} czy opłacone & a & a\\
+					\nextrow & pracownik \textbf{sprawdza} czy opłacone &  & sprawdzenie\\
 				\hline
-					\next & pracownik \textbf{zmienia} status zamówienia & a & a\\
+					\nextrow & pracownik \textbf{zmienia} status zamówienia &  & zmienianie\\
 				\hline
-					\next & premię się \textbf{wylicza} ze wzoru $f(x) = 0.1 * x$& a & a\\
+					\nextrow & premię się \textbf{wylicza} ze wzoru $f(x) = 0.1 * x$&  & wyliczanie\\
 				\hline
-					\next & system \textbf{przechowuje} informację o produktach & a & a\\
+					\nextrow & system \textbf{przechowuje} informację o produktach &  & \\
 				\hline
-					\next & instrument \textbf{ma} nazwę & a & a\\
+					\nextrow & instrument \textbf{ma} nazwę &  & \\
 				\hline
-					\next & firma \textbf{może produkować} więcej jednego instrumentu & a & a\\
+					\nextrow & firma \textbf{może produkować} więcej jednego instrumentu &  & produkowanie\\
 				\hline
-					\next & system \textbf{przechowuje} dane klientów & a & a\\
+					\nextrow & system \textbf{przechowuje} dane klientów &  & przechowanie\\
 				\hline
-					\next & klient \textbf{musi założyć} konto & założenie konta & a\\
+					\nextrow & klient \textbf{musi założyć} konto & zakładanie konta & zakładanie\\
 				\hline
-					\next & klient \textbf{wypełnia} formularz aby \textbf{złożyć} zamówienie & składanie zamówienia & a\\
+					\nextrow & klient \textbf{wypełnia} formularz aby \textbf{złożyć} zamówienie & składanie zamówienia & składanie\\
 				\hline
-					\next & system \textbf{przechowuje} dane pracowników & a & a\\
+					\nextrow & system \textbf{przechowuje} dane pracowników &  & \\
 				\hline
-					\next & pracownik \textbf{realizuje} $[1; 2]$ funkcji & a & a\\
+					\nextrow & pracownik \textbf{realizuje} $[1; 2]$ funkcji &  & realizowanie\\
 				\hline
-					\next & \textbf{nie przewidujemy} rozszerzenia listy odpowiedzialności & a & a\\
+					\nextrow & \textbf{nie przewidujemy} rozszerzenia listy odpowiedzialności &  & \\
 				\hline
-					\next & klient \textbf{składa} zamówienie & a & a\\
+					\nextrow & klient \textbf{może wybrać} poprzez formularz &  & \\
 				\hline
-					\next & klient \textbf{może wybrać} poprzez formularz & a & a\\
+					\nextrow & klient \textbf{wybiera} formę dostawy &  & \\
 				\hline
-					\next & klient \textbf{wybiera} formę dostawy & a & a\\
+					\nextrow & klient \textbf{wybiera} formę opłaty &  & \\
 				\hline
-					\next & klient \textbf{wybiera} formę opłaty & a & a\\
+					\nextrow & zamówienie \textbf{obsługują} co najmniej dwóch pracowników & obsługa zamówienia & obsługa\\
 				\hline
-					\next & zamówienie \textbf{obsługują} co najmniej dwóch pracowników & a & a\\
+					\nextrow & \textbf{rejestrujemy} pracowników realizujących zamówienia &  & rejestracja\\
 				\hline
-					\next & \textbf{rejestrujemy} pracowników realizujących zamówienia & a & a\\
+					\nextrow & na premię \textbf{wpływa} liczba skompletowanych zamówień &  & \\
 				\hline
-					\next & klient \textbf{może wybrać} poprzez formularz & a & a\\
+					\nextrow & system \textbf{przechowuje} informację o zamówieniach &  & \\
+				\hline
+					\nextrow & system \textbf{generuje} raporty & generacja raportów & generacja\\
+				\hline
+					\nextrow & klient \textbf{podaje} dane osobowe podczas rejestracji &  & \\
+				\hline
+					\nextrow & klient \textbf{może zmienić} dane osobowe &  & \\
+				\hline
+					\nextrow & klient \textbf{może przejrzeć} zamówienia &  & \\
+				\hline
+					\nextrow & klient \textbf{może anulować} zamówienie &  & \\
+				\hline
+					\nextrow & pracownik \textbf{może zmienić} dostępność instrumentu &  & \\
+				\hline
+					\nextrow & pracownik realizujący zamówienia\textbf{może zmienić} stan zamówienia  &  & zmienianie\\
+				\hline
+					\nextrow & szef \textbf{posiada} funkcje pracownika &  & posiadanie\\
+				\hline
+					\nextrow & szef \textbf{może wprowadzić} nowe instrumenty &  & wprowadzanie\\
+				\hline
+					\nextrow & szef \textbf{może zmieniać} dane o producentach &  & zmienianie\\
+				\hline
+					\nextrow & szef \textbf{ma} dostęp do wszystkich raportów &  & \\
+				\hline
+					\nextrow & pracownicy \textbf{nie posiadają} dostępu do zamówień &  & \\
+				\hline
+					\nextrow & tylko pracownik realizujący zamówienie \textbf{ma} dostęp &  & \\
+				\hline
+					\nextrow & szef \textbf{może dodawać} dane pracowników &  & dodawanie\\
+				\hline
+					\nextrow & szef \textbf{może usuwać} dane pracowników &  & usuwanie\\
+				\hline
+					\nextrow & szef \textbf{może zmieniać} dane pracowników &  & zmiana\\
+				\hline
+					\nextrow & raz na miesiąc system \textbf{tworzy} raporty & tworzenie raportów & tworzenie\\
+				\hline
+					\nextrow & raz na miesiąc system \textbf{wylicza} premie pracownikom &  & wyliczanie\\
+				\hline
+					\nextrow & raz na miesiąc system \textbf{tworzy} backup bazy danych &  & tworzenie\\
 				\hline
 	
 			\end{tabular}
